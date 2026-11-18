@@ -1,0 +1,25 @@
+node_modules/
+.next/
+out/
+next-env.d.ts
+*.tsbuildinfo
+
+.env
+.env.local
+.env.*.local
+
+# Gambar produk yang diunggah lewat dashboard
+public/uploads/*
+!public/uploads/.gitkeep
+
+npm-debug.log*
+.DS_Store
+coverage/
+
+# Env khusus E2E (berisi password DB)
+.env.e2e
+
+# Output Playwright & build khusus E2E
+.next-*/
+test-results/
+playwright-report/

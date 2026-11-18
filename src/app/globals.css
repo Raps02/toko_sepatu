@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :focus-visible {
+    outline: 2px solid theme('colors.court.DEFAULT');
+    outline-offset: 2px;
+  }
+
+  /* Angka harga dan stok sejajar di tabel tanpa perlu font monospace. */
+  .tabular {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@layer components {
+  /* Garis marka: satu-satunya penanda "kamu di sini" di seluruh website. */
+  .marking-line {
+    box-shadow: inset 0 -3px 0 theme('colors.marking.DEFAULT');
+  }
+
+  /* Menu dashboard aktif: garis di bawah saat menu mendatar, di kiri saat jadi sidebar. */
+  .nav-active {
+    box-shadow: inset 0 -3px 0 theme('colors.marking.DEFAULT');
+  }
+
+  @media (min-width: 1024px) {
+    .nav-active {
+      box-shadow: inset 3px 0 0 theme('colors.marking.DEFAULT');
+    }
+  }
+}

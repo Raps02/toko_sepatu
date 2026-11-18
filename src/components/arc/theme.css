@@ -1,0 +1,68 @@
+/*
+ * Tema toko untuk komponen Arc.
+ *
+ * foundation.css bawaan Arc memakai palet abu netral. File ini menimpa token
+ * semantiknya dengan palet toko dari tailwind.config.ts (ink, studio, pavement,
+ * court, danger), supaya komponen Arc terlihat sama dengan bagian lain website.
+ * Diimpor sesudah foundation.css di src/app/layout.tsx.
+ *
+ * Website ini hanya punya tema terang, jadi tidak ada versi gelapnya.
+ */
+:root {
+  /* Permukaan dan teks */
+  --background: #ffffff;
+  --surface: #ffffff;
+  --surface-raised: #ffffff;
+  --surface-muted: #f5f5f5; /* studio */
+  --foreground: #111111; /* ink */
+  --text-secondary: #333333; /* ink-soft */
+  --text-muted: #707072; /* ink-muted */
+
+  /* Garis */
+  --border: #ccd3d8; /* pavement-300, sama dengan border isian form */
+  --border-subtle: #e5e5e5; /* studio-line */
+  --border-strong: #a9b2bd; /* asphalt-300: garis isian Arc saat diam; hover dan fokus tetap ink (--foreground) */
+
+  /* Aksen: hijau lapangan */
+  --accent: #0e6b5c; /* court */
+  --accent-strong: #0a5146; /* court-dark */
+  --accent-subtle: #e2f0ed; /* court-tint */
+  --accent-foreground: #ffffff;
+
+  /* Kontrol pilihan (switch, checkbox, radio) memakai ink seperti tombol utama */
+  --control-on: #111111;
+  --control-fill: #111111;
+
+  /* Status */
+  --success: #007d48; /* promo-save */
+  --warning: #92400e;
+  --danger: #b83a3a;
+  --info: #0e6b5c;
+  --tone-amber: #92400e;
+  --tone-green: #007d48;
+  --tone-rose: #b83a3a;
+  --tone-teal: #0e6b5c;
+
+  /* Fokus keyboard: garis hijau lapangan, sama dengan aturan :focus-visible di globals.css */
+  --focus-outline: #0e6b5c;
+
+  /* Sudut: tombol dan isian rounded-lg, panel rounded-xl */
+  --radius-control: 0.5rem;
+  --radius-panel: 0.75rem;
+  --radius-surface: 1rem;
+
+  /* Ukuran huruf mengikuti text-sm (14px) dan text-base (16px) Tailwind yang dipakai website */
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --tracking-body: 0;
+  --tracking-display: -0.01em;
+
+  --shadow-resting: 0 1px 2px rgb(17 17 17 / 0.04);
+
+  /* Seri grafik: hijau lapangan, kuning marka, abu aspal, oranye promo */
+  --series-1: #0e6b5c;
+  --series-2: #dfa021;
+  --series-3: #5b6776;
+  --series-4: #9e3500;
+}
